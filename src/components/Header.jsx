@@ -11,7 +11,7 @@ const Header = () => {
     };
 
     return (
-        <header className="sticky top-0 bg-white z-10">
+        <header className="bg-white">
             <div className="w-full h-10 bg-green-800 flex flex-col md:flex-row items-center justify-center md:justify-between px-5 md:px-10">
                 <span className="text-white text-sm md:text-base font-semibold md:ml-auto">Free Shipping on orders above 999/-</span>
                 <p className="text-white text-sm md:text-base font-semibold md:ml-auto">Call us on: +91 9876805120</p>
