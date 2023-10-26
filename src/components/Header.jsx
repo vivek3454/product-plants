@@ -1,7 +1,6 @@
 import logo from "../assets/icons/logo.png";
-import { PiPlantFill } from "react-icons/pi";
 import { MdCancel, MdMenu } from "react-icons/md";
-import { AiOutlineShoppingCart, AiOutlineUser, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineShoppingCart, AiOutlineUser } from "react-icons/ai";
 import { useState } from "react";
 
 const Header = () => {
@@ -12,12 +11,12 @@ const Header = () => {
     };
 
     return (
-        <header>
+        <header className="sticky top-0 bg-white z-10">
             <div className="w-full h-10 bg-green-800 flex flex-col md:flex-row items-center justify-center md:justify-between px-5 md:px-10">
                 <span className="text-white text-sm md:text-base font-semibold md:ml-auto">Free Shipping on orders above 999/-</span>
                 <p className="text-white text-sm md:text-base font-semibold md:ml-auto">Call us on: +91 9876805120</p>
             </div>
-            <nav className="container mx-auto flex justify-between items-center p-5">
+            <nav className="max-w-[1400px] bg-white mx-auto flex justify-between items-center p-5">
                 <div className="flex items-center gap-x-3">
                     <img src={logo} className="w-12 h-12 md:w-14 md:h-14" alt="logo" />
                     <span className="text-green-900 font-bold text-xl md:text-2xl">Chaperone</span>
@@ -54,13 +53,6 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-            <div className="flex justify-center items-center mt-5">
-                <div className="flex items-center border-b border-gray-600">
-                    <AiOutlineSearch size={22} className="text-gray-500" />
-                    <input type="text" placeholder="Search Plants" className="ml-4 text-base md:text-lg outline-none" />
-                    <PiPlantFill size={22} className="text-gray-500 -mb-3" />
-                </div>
-            </div>
         </header>
     );
 };
