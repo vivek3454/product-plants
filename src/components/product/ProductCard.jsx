@@ -4,11 +4,11 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 const ProductCard = ({ product }) => {
   return (
     <div className="max-w-[280px] mb-5">
-      <div className="border-2 border-gray-400 relative">
+      <div className="border-t-2 border-l-2 border-r-2 border-gray-400 relative">
         <AiOutlineHeart size={28} className="absolute top-2 right-2 text-gray-500" />
         <img src={product.imgUrl} className="w-full h-[300px]" alt={product.title} />
-        <button className="bg-green-800 text-white w-full py-[6px] font-semibold hover:bg-green-700">View Product</button>
       </div>
+      <button className="bg-green-800 text-white w-full py-[6px] font-semibold hover:bg-green-700">View Product</button>
       <h2 className="font-semibold text-xl mt-4">{product.title}</h2>
       <p className="text-gray-400 text-sm">{product.categories}</p>
       <div className="flex items-center gap-x-2">
